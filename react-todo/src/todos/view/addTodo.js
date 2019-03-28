@@ -28,8 +28,8 @@ class AddTodo extends Component {
     return (
         <div className="add-todo">
           <form onSubmit={this.onSubmit}>
-            <input type="text" ref={this.refInput}/>
-            <button>添加</button>
+            <input className="add-input " type="text" ref={this.refInput}/>
+            <button className="add-btn">添加</button>
           </form>
         </div>
     )

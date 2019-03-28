@@ -6,9 +6,9 @@ import {setFilter} from '../actions';
 
 const Link = ({children, active, setFilter}) => {
   if(active) {
-    return <span>{children}</span>
+    return <span className="filter-link selected">{children}</span>
   }else {
-    return <a href="#" onClick={(e) => {
+    return <a href="#" className="filter-link" onClick={(e) => {
       e.preventDefault();
       setFilter();
     }}>{children}</a>
@@ -17,7 +17,7 @@ const Link = ({children, active, setFilter}) => {
 Link.propTypes = {
   children: PropTypes.node.isRequired,
   active: PropTypes.bool.isRequired,
-  serFilter: PropTypes.func.isRequired
+  setFilter: PropTypes.func.isRequired
 };
 
 

@@ -8,7 +8,7 @@ import TodoItem from './todoItem';
 
 const TodoList = ({todos, onToggleTodo, onRemoveTodo}) => {
   return (
-      <ul>
+      <ul className="todo-list">
         {
           todos.map((item) => (
               <TodoItem

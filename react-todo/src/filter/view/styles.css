@@ -1,0 +1,13 @@
+.filters-wrap {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+.filter-link {
+    flex: 1;
+    color: #b2cf87;
+}
+.selected {
+    color: #41a13c;
+}

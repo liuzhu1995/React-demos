@@ -1,7 +1,7 @@
 import React from 'react';
-import AddTodo from './addTodo'
-import TodoList from './todoList'
-
+import AddTodo from './addTodo';
+import TodoList from './todoList';
+import './style.css';
 
 const Todos = () => {
   return (
