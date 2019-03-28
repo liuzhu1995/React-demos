@@ -59,6 +59,22 @@ class CounterContainer extends Component {
 
 }
 
+function mapStateToProps(state, ownProps) {
+  return {
+    value: state[ownProps.caption];
+  }
+}
+function mapDispatchToProps(dispatch, ownProps) {
+  return {
+    onIncrement: () => {
+      dispatch(Actions.increment(ownProps.caption))
+    },
+    onDecrement: () => {
+      dispatch(Actions.decrement(ownProps.caption))
+    }
+  }
+}
+
 CounterContainer.contextTypes = {
   store: PropTypes.object
 };
