@@ -9,7 +9,8 @@ export default (state=[], action) => {
         {
           id: action.id,
           text: action.text,
-          completed: action.completed
+          completed: action.completed,
+          typeId: 0
         },
         ...state
       ]

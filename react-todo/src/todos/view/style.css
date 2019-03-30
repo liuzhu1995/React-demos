@@ -72,5 +72,9 @@ ul,li {
 }
 .todo-item .remove:hover {
     color: #41a13c;
+    text-decoration:line-through
+}
+.line-through {
+    text-decoration: line-through;
 }
 
